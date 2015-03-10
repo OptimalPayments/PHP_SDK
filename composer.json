@@ -1,0 +1,24 @@
+{
+    "name": "optimalpayments/optimal-php-sdk",
+    "type": "library",
+    "description": "PHP SDK for the Optimal Payments API",
+    "keywords" : ["payment", "payment processing", "netbanx", "optimal", "sdk"],
+    "license": "MIT",
+    "authors" : [
+        {
+            "name": "Optimal Payments",
+            "email": "DeveloperCentre@optimalpayments.com",
+            "homepage": "http://developer.optimalpayments.com",
+            "role": "Developer"
+        }
+
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "lib-curl" : "*"
+    },
+
+    "autoload" : {
+    	"files" : ["source/optimalpayments.php"]
+    }
+}
