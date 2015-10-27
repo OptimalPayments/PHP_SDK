@@ -59,7 +59,8 @@ class Card extends \OptimalPayments\JSONObject
          'paymentToken' => 'string',
          'error' => '\OptimalPayments\Error',
          'links' => 'array:\OptimalPayments\Link',
-         'profileID' => 'string'
+         'profileID' => 'string',
+        'singleUseToken'=>'string'
     );
 
 }

@@ -71,6 +71,7 @@ class Profile extends \OptimalPayments\JSONObject
          'paymentToken'=>'string',
          'addresses'=>'array:\OptimalPayments\CustomerVault\Address',
          'cards'=>'array:\OptimalPayments\CustomerVault\Card',
+        'card'=>'\OptimalPayments\CustomerVault\Card',
          'error' => '\OptimalPayments\Error',
          'links' => 'array:\OptimalPayments\Link'
     );
