@@ -40,6 +40,10 @@ namespace OptimalPayments\CustomerVault;
  * @property \OptimalPayments\CustomerVault\Card[] $cards
  * @property \OptimalPayments\Error $error
  * @property \OptimalPayments\Link[] $links
+ * @property \OptimalPayments\achbankaccount $achBankAccounts
+ * @property \OptimalPayments\bacsbankaccounts $bacsBankAccounts
+ * @property \OptimalPayments\eftbankaccounts $eftBankAccounts
+ * @property \OptimalPayments\sepabankaccounts $sepaBankAccounts
  */
 class Profile extends \OptimalPayments\JSONObject
 {
@@ -71,9 +75,12 @@ class Profile extends \OptimalPayments\JSONObject
          'paymentToken'=>'string',
          'addresses'=>'array:\OptimalPayments\CustomerVault\Address',
          'cards'=>'array:\OptimalPayments\CustomerVault\Card',
-        'card'=>'\OptimalPayments\CustomerVault\Card',
          'error' => '\OptimalPayments\Error',
-         'links' => 'array:\OptimalPayments\Link'
+         'links' => 'array:\OptimalPayments\Link',
+		 'achBankAccounts' => '\OptimalPayments\CustomerVault\ACHBankaccounts',
+         'bacsBankAccounts' => '\OptimalPayments\CustomerVault\BACSBankaccounts',
+         'eftBankAccounts' => '\OptimalPayments\CustomerVault\EFTBankaccounts',
+         'sepaBankAccounts' => '\OptimalPayments\CustomerVault\SEPABankaccounts'
     );
 
 }

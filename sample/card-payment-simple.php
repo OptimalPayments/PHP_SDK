@@ -8,6 +8,7 @@ use OptimalPayments\CardPayments\Authorization;
 if ($_POST) {
 	$client = new OptimalApiClient($optimalApiKeyId, $optimalApiKeySecret, Environment::TEST, $optimalAccountNumber);
 	try {
+           
 		$auth = $client->cardPaymentService()->authorize(new Authorization(array(
 			 'merchantRefNum' => $_POST['merchant_ref_num'],
 			 'amount' => $_POST['amount'] * $currencyBaseUnitsMultiplier,
@@ -18,7 +19,7 @@ if ($_POST) {
 				  'cardExpiry' => array(
 						'month' => $_POST['card_exp_month'],
 						'year' => $_POST['card_exp_year']
-				  )
+				 )
 			 ),
 			 'billingDetails' => array(
 				  'street' => $_POST['street'],
@@ -27,6 +28,7 @@ if ($_POST) {
 				  'country' => $_POST['country'],
 				  'zip' => $_POST['zip']
 		))));
+               // var_dump($auth);die;
 		die('Payment successful! ID: ' . $auth->id);
 	} catch (OptimalPayments\NetbanxException $e) {
 		echo '<pre>';

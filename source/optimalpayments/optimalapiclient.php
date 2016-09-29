@@ -162,6 +162,26 @@ class OptimalApiClient
     {
         return new CustomerVaultService($this);
     }
+    
+    
+     /**
+     * Direct Debit service.
+     *
+     * @return \OptimalPayments\DirectDebitService
+     */
+    public function directDebitService() {
+        return new DirectDebitService($this);
+    }
+
+    /**
+     * Threed Secure  service.
+     *
+     * @return \OptimalPayments\ThreedSecureService
+     */
+    public function threeDSecureService() {
+        return new ThreeDSecureService($this);
+    }
+    
 
     /**
 	 * Hosted payment service.
