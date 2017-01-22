@@ -26,7 +26,7 @@ namespace OptimalPayments\CardPayments;
  * @property string $startDate
  * @property string $endDate
  */
-class Filter extends JSONObject
+class Filter extends \OptimalPayments\JSONObject
 {
     protected static $fieldTypes = array(
          'limit' => 'int',
