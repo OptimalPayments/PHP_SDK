@@ -119,7 +119,7 @@ class OptimalApiClient
         if ($this->environment == Environment::TEST) {
             $this->apiEndPoint = "https://api.test.netbanx.com";
         } else {
-            $this->apiEndPoint = "https://api.netbanx.com";
+            $this->apiEndPoint = "http://api-netbanx-com.nmr.int";
         }
 
         $this->account = $account;
