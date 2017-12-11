@@ -21,24 +21,27 @@
 namespace OptimalPayments\HostedPayment;
 
 /**
+ * @property string $bin
+ * @property string $brand
  * @property string $paymentToken
  * @property string $cardNum
+ * @property string $country
+ * @property string $expiry
  * @property string $type
  * @property string $lastDigits
- * @property \OptimalPayments\CardPayments\CardExpiry $cardExpiry
- * @property string $cvv
- * @property string $track1
- * @property string $track2
+ * @property string $threeDEnrolment
+ * @property string $threeDResult
  */
 class Card extends \OptimalPayments\JSONObject
 {
     protected static $fieldTypes = array(
+         'bin'=>'string',
          'brand'=>'string',
          'country'=>'string',
          'expiry'=>'string',
          'lastDigits'=>'string',
          'threeDEnrolment'=>'string',
+         'threeDResult'=>'string',
          'type'=>'string'
     );
-
 }
