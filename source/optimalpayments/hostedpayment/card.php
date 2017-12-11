@@ -21,6 +21,7 @@
 namespace OptimalPayments\HostedPayment;
 
 /**
+ * @property string $bin
  * @property string $paymentToken
  * @property string $cardNum
  * @property string $type
@@ -35,6 +36,7 @@ namespace OptimalPayments\HostedPayment;
 class Card extends \OptimalPayments\JSONObject
 {
     protected static $fieldTypes = array(
+         'bin'=>'string',
          'brand'=>'string',
          'country'=>'string',
          'expiry'=>'string',
