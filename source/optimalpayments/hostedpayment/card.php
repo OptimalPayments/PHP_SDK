@@ -22,16 +22,15 @@ namespace OptimalPayments\HostedPayment;
 
 /**
  * @property string $bin
+ * @property string $brand
  * @property string $paymentToken
  * @property string $cardNum
+ * @property string $country
+ * @property string $expiry
  * @property string $type
  * @property string $lastDigits
  * @property string $threeDEnrolment
  * @property string $threeDResult
- * @property \OptimalPayments\CardPayments\CardExpiry $cardExpiry
- * @property string $cvv
- * @property string $track1
- * @property string $track2
  */
 class Card extends \OptimalPayments\JSONObject
 {
