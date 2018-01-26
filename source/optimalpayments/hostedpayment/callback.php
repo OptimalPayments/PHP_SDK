@@ -41,7 +41,8 @@ class Callback extends \OptimalPayments\JSONObject
          'rel' => array(
               'on_success',
               'on_decline',
-              'on_hold'
+              'on_hold',
+              'on_pending'
          ),
          'retries' => 'int',
          'returnKeys' => 'array:string',
